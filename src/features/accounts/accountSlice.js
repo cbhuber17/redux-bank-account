@@ -4,7 +4,7 @@ const initialStateAccount = {
   loanPurpose: "",
 };
 
-export default function accountReducer(state = initialStateCustomer, action) {
+export default function accountReducer(state = initialStateAccount, action) {
   switch (action.type) {
     case "account/deposit":
       return { ...state, balance: state.balance + action.payload };
